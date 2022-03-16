@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="aluno.lab01"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-16 07:33:49 "/>
+        <attribute name="created" value="YWx1bm8ubGFiMDE7U0VERUxBQjAxLTQ1OzIwMjItMDMtMTY7IjA3OjAxOjI5ICI7MjkyMg=="/>
+        <attribute name="edited" value="YWx1bm8ubGFiMDE7U0VERUxBQjAxLTQ1OzIwMjItMDMtMTY7IjA3OjMzOjQ5ICI7MTszMDM3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Nota1" type="Integer" array="False" size=""/>
+            <declare name="Nota2" type="Integer" array="False" size=""/>
+            <declare name="Media" type="Integer" array="False" size=""/>
+            <input variable="Nota1"/>
+            <input variable="Nota2"/>
+            <assign variable="Media" expression="Nota1 + Nota2"/>
+            <if expression="Media &gt;= 6">
+                <then>
+                    <output expression="&quot;Aprovado!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Reprovado!&quot;" newline="True"/>
+                    <declare name="NotaFinal" type="Integer" array="False" size=""/>
+                    <input variable="NotaFinal"/>
+                    <declare name="ResultadoFInal" type="Integer" array="False" size=""/>
+                    <assign variable="ResultadoFinal" expression="Media + NotaFinal"/>
+                    <if expression="ResultadoFinal &gt;= 6">
+                        <then>
+                            <output expression="&quot;Aprovado!&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Reprovado!&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
