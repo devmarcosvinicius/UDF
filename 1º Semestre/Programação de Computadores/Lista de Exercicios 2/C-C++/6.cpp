@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-//6. Refazer o exercício anterior, solicitando antes o múltiplo a ser testado
+//6. Refazer o exercÃ­cio anterior, solicitando antes o mÃºltiplo a ser testado
 
 int main(){
 	int numero, multiplo;
@@ -12,9 +12,9 @@ int main(){
 	printf("digite um numero multiplo: ");
 	scanf("%i", &multiplo);
 	
-	if(!(numero % multiplo)){
-		printf("e multiplo de %i", numero, multiplo);
+	if((numero % multiplo) == 0){
+		printf("%i e multiplo de %i.", numero, multiplo);
 	} else {
-		printf("nao e multiplo de %i", numero, multiplo);
+		printf("%i nao e multiplo de %i.", numero, multiplo);
 	}
 }
