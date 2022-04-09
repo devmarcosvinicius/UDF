@@ -6,4 +6,4 @@ o número real da seguinte forma: "Voce informou os numeros N e X.YY"
 
 intNum = int(input("Digite um numero inteiro: "))
 floatNum = float(input("Digite um numero real: "))
-print("Voce informou os numeros {} e {:.2f}", intNum, floatNum)
+print("Voce informou os numeros {} e {:.2f}".formart(intNum, floatNum))
