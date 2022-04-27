@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="aluno.lab02"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-04-26 08:30:44 "/>
+        <attribute name="created" value="YWx1bm8ubGFiMDI7U0VERUxBQjAyLTQ4OzIwMjItMDQtMjY7IjA3OjI2OjQ4ICI7MjkzNw=="/>
+        <attribute name="edited" value="YWx1bm8ubGFiMDI7U0VERUxBQjAyLTQ4OzIwMjItMDQtMjY7IjA4OjMwOjQ0ICI7NDszMDQw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite um numero: &quot;" newline="True"/>
+            <input variable="numero"/>
+            <output expression="numero - 1" newline="True"/>
+        </body>
+    </function>
+    <function name="helloWorld" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Hello World!&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
