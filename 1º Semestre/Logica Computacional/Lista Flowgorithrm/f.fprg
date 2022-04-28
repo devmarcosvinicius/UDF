@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mrcsv"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-04-28 03:01:53 PM"/>
+        <attribute name="created" value="bXJjc3Y7R1JYOzIwMjItMDQtMjg7MDI6MTc6MDQgUE07MjA3NA=="/>
+        <attribute name="edited" value="bXJjc3Y7R1JYOzIwMjItMDQtMjg7MDM6MDE6NTMgUE07MjsyMTgx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="distribuidor, impostos, custoDeFabrica" type="Real" array="False" size=""/>
+            <assign variable="impostos" expression="45/100"/>
+            <assign variable="distribuidor" expression="28/100"/>
+            <output expression="&quot;Digite o custo de fabrica do veiculo: &quot;" newline="True"/>
+            <input variable="custoDeFabrica"/>
+            <output expression="&quot;O valor final do veiculo ser&#225; de R$: &quot; &amp; custoDeFabrica + (distribuidor * custoDeFabrica) + (impostos * custoDeFabrica) &amp; ToChar(13) &amp; &quot;Voc&#234; pagara de impostos R$ &quot; &amp; impostos * custoDeFabrica &amp; ToChar(13) &amp; &quot;Voc&#234; pagar&#225; de custo do distribuidor R$ &quot; &amp; distribuidor * custoDeFabrica" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -4,14 +4,24 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="aluno.lab02"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2022-04-26 09:38:41 "/>
+        <attribute name="saved" value="2022-04-28 03:10:38 PM"/>
         <attribute name="created" value="YWx1bm8ubGFiMDI7U0VERUxBQjAyLTQ4OzIwMjItMDQtMjY7IjA3OjI2OjQ4ICI7MjkzNw=="/>
         <attribute name="edited" value="YWx1bm8ubGFiMDI7U0VERUxBQjAyLTQ4OzIwMjItMDQtMjY7IjA5OjM4OjQxICI7OTszMDUx"/>
+        <attribute name="edited" value="bXJjc3Y7R1JYOzIwMjItMDQtMjg7MDM6MTA6MzggUE07MjsyMTg0"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
             <declare name="eleitores, votosBrancos, votosNulos, votosValidos" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o numero de eleitores: &quot;" newline="True"/>
+            <input variable="eleitores"/>
+            <output expression="&quot;Digite o numero de votos em branco: &quot;" newline="True"/>
+            <input variable="votosBrancos"/>
+            <output expression="&quot;Digite o numero de votos nulos: &quot;" newline="True"/>
+            <input variable="votosNulos"/>
+            <output expression="&quot;Digite o numero de votos validos: &quot;" newline="True"/>
+            <input variable="votosValidos"/>
+            <output expression="&quot;Votos em branco: &quot; &amp; (votosBrancos/eleitores) &amp; &quot;%&quot; &amp; ToChar(13) &amp;&#13;&#10;&quot;Votos nulos: &quot; &amp; (votosNulos/eleitores) &amp; &quot;%&quot; &amp; ToChar(13) &amp;&#13;&#10;&quot;Votos validos: &quot; &amp; (votosValidos/eleitores) &amp; &quot;%&quot;" newline="True"/>
         </body>
     </function>
     <function name="helloWorld" type="None" variable="">

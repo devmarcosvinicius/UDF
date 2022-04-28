@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="aluno.lab02"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-04-28 02:15:22 PM"/>
+        <attribute name="created" value="YWx1bm8ubGFiMDI7U0VERUxBQjAyLTQ4OzIwMjItMDQtMjY7IjA3OjI2OjQ4ICI7MjkzNw=="/>
+        <attribute name="edited" value="YWx1bm8ubGFiMDI7U0VERUxBQjAyLTQ4OzIwMjItMDQtMjY7IjA5OjM4OjQxICI7OTszMDUx"/>
+        <attribute name="edited" value="bXJjc3Y7R1JYOzIwMjItMDQtMjg7MDI6MTU6MjIgUE07MzsyMTgy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="salarioMensal, percentual, ajuste" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o salario mensal do funcion&#225;rio: &quot;" newline="True"/>
+            <input variable="salarioMensal"/>
+            <output expression="&quot;Digite o percentual de ajuste do salario: &quot;" newline="True"/>
+            <input variable="percentual"/>
+            <assign variable="ajuste" expression="(percentual/100) * salarioMensal"/>
+            <output expression="&quot;O ajuste mensal ira ser de R$ &quot; &amp; ajuste &amp; &quot;.&quot; &amp; ToChar(13)&#13;&#10;&amp; &quot;E o valor do salario ficar&#225; de R$ &quot; &amp; salarioMensal + ajuste &amp; &quot;.&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="helloWorld" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Hello World!&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

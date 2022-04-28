@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="aluno.lab02"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-04-26 09:31:48 "/>
+        <attribute name="created" value="YWx1bm8ubGFiMDI7U0VERUxBQjAyLTQ4OzIwMjItMDQtMjY7IjA3OjI2OjQ4ICI7MjkzNw=="/>
+        <attribute name="edited" value="YWx1bm8ubGFiMDI7U0VERUxBQjAyLTQ4OzIwMjItMDQtMjY7IjA5OjMxOjQ4ICI7NzszMDQ5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="dia, mes, ano, final" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite quantos dias voc&#234; tem de nascimento: &quot;" newline="True"/>
+            <input variable="dia"/>
+            <output expression="&quot;Digite quantos meses voc&#234; tem de nascimento: &quot;" newline="True"/>
+            <input variable="mes"/>
+            <output expression="&quot;Digite quantos anos voc&#234; tem de nascimento: &quot;" newline="True"/>
+            <input variable="ano"/>
+            <assign variable="final" expression="dia + (30 * mes) + ( ano * 365.25)"/>
+            <output expression="final" newline="True"/>
+        </body>
+    </function>
+    <function name="helloWorld" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Hello World!&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
