@@ -3,22 +3,13 @@
 registros a serem lidos (N). Em seguida algoritmo deve solicitar o nome e idade de N
 pessoas e ao final apresentar o nome da pessoa mais velha.
 """
+entradas = int(input("Digite o numero de pessoas: "))
 
-nomeMaisVelho= ""
-idadeMaisVelho = 1
-i = 1
-
-reps = int(input("Digite o numero de entradas a serem lidos: "))
-
-while i <= reps:
-    nome = str(input("Digite o nome da pessoa: "))
-    idade = int(input("Digite a idade da pessoa: "))
-
-    if idade > idadeMaisVelho:
-        idadeMaisVelho = idade
-        nomeMaisVelho = nome
-
-    i += 1
+for i in range(1, entradas):
+     userInput = str(input("Digite o nume da pessoa", i))
 
 
-print("O nome da pessoa mais velha é {}".format(nomeMaisVelho))
+
+for i in range(1, userInput):
+    username = str(input("Digite o nome da pessoa {}: ".format(i)))
+    age = int(input("Digite a idade da pessoa {}: ".format(i)))  

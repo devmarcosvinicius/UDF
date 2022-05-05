@@ -1,18 +1,15 @@
 """
-11. Elabore um algoritmo que leia um número de entrada que indicará a quantidade de
-números a serem lidos. Em seguida, leia n números (conforme o valor informado
+11. Elabore um algoritmo que leia um número de entrada que indicará a quantidade de 
+números a serem Lidos. Em seguida, Leia n números (conforme o valor informado 
 anteriormente) e imprima a soma e a média aritmética dos números informados.
 """
 
-reps = int(input("Digite o numero de entradas para serem lidas: "))
+repInput = int(input ("Digite o numero de repetições: "))
+userInput = int(input("Digite um numero: "))
 soma = 0
-media = 0
-i = 1
 
-while i <= reps:
-    soma = soma + i
-    media = soma / i
-    i+=1 
+for i in range(0, repInput):
+    soma = soma + userInput
 
-print("A soma dos numeros entre 1 e {} é igual a {}".format(reps, soma))
-print("A media dos entre os numeros 1 e {} é igual a {:.2f}".format(reps, media))
+print("A soma é de", userInput,",",  repInput, "vezes, é igual a", soma)
+print("A media aritmetica de", userInput, ",", repInput, "vezes, é igual a", soma/repInput)

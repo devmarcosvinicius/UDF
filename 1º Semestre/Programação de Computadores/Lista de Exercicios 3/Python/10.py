@@ -5,7 +5,7 @@ linha.
 """
 
 strInput = str(input("Digite uma palavra: "))
-intInput = int(input("Digite o repetições para a {}: ".format(strInput)))
+intInput = int(input("Digite o numero de repetições para a palavra {}: ".format(strInput)))
 
 for i in range(0, intInput):
     print(strInput)
