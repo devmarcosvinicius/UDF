@@ -15,5 +15,18 @@ while continuar == 1:
     idades.append(userInput)
     continuar = int(input("Você deseja informar a idade do proximo aluno? 1.Sim 2.Não "))
 
-print("A média aritimética da idade da turma é de ", (sum(idades))/len(idades))
-print("A mediana da idade da turma é de ", (statistics.median(idades)))
+idades.sort()
+
+print("A idade do aluno mais Velho é de {}".format(idades[-1]))
+print("A idade do aluno mais novo é de {}".format(idades[0]))
+
+idadesMenor = [i for i in idades if i <= 18]
+idadesMenor.sort()
+print("A idades menores de 18 anos são:", len(idadesMenor))
+
+idadesMaior = [i for i in idades if i >= 18]
+idadesMaior.sort()
+print("A idades maiores de 18 anos são:", len(idadesMaior))
+
+print("A média aritimética da idade da turma é de {:.2f}".format((sum(idades))/len(idades)))
+print("A mediana da idade da turma é de {:.2f}".format((statistics.median(idades))))
