@@ -1,0 +1,17 @@
+@font-face{
+    font-family:"cassannet-plus-regular";
+    src: url(../fonts/cassannet_plus_regular-webfont.ttf);
+    
+    font-family:"ubuntu-light";
+    src: url("/fonts/Ubuntu-Light.ttf.ttf");
+}
+
+body,
+html{
+    font-family:"ubuntu-light";
+}
+
+.logo{
+    font-family:"cassannet-plus-regular";
+}
+
