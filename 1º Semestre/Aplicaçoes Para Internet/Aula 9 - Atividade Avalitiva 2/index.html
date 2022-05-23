@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Seleção Brasileira</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/e09498d50b.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <img src="images/banner.png" alt="">
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand ms-3" href="#">BRASIL NA COPA</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Início</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#notícias">Notícias</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#exampleModal">A
+                                        Seleção</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#accordionExample">Escalação</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Loja
+                                    </a>
+                                    <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item text-white" href="#">Masculino</a></li>
+                                        <li><a class="dropdown-item text-white" href="#">Feminino</a></li>
+                                        <li><a class="dropdown-item text-white" href="#">Kids</a></li>
+                                        <li><a class="dropdown-item text-white" href="#">Acessórios</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner mt-4">
+                        <div class="carousel-item active">
+                            <img src="images/7.webp" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Veja a lista de Tite para amistosos da seleção brasileira em junho</h5>
+                                <p>Brasil encara Japão, Coreia do Sul e mais um rival a definir</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/1.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Da segunda divisão na Bahia à lista de Tite: a trajetória de Danilo</h5>
+                                <p>Convocado para amistosos do Brasil</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/2.webp" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Amistoso contra a Argentina é cancelado</h5>
+                                <p>Decisão foi comunicada nesta quarta-feira</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-lg-6 mt-4">
+                <div class="col-lg-12 mb-2 img-carousel img-1 d-flex align-items-end">
+                    <h3 class="mb-3 ms-3 fs-4 text-d"><a href="#" class="text-white text-decoration-none">CBF anuncia que
+                            não terá terceira partida em<br> junho</a></h3>
+                </div>
+                <div class="col-lg-12 img-carousel img-2 d-flex align-items-end">
+                    <h3 class="mb-3 ms-3 fs-4"><a href="#" class="text-white text-decoration-none">Após corte em março,
+                            Gabriel Magalhães<br> volta à disputa na
+                            Seleção</a></h3>
+                
+                </div>
+            </div>
+        </div>
+
+        <!-------- Cards -------->
+        <div class="row mt-4" id="notícias">
+            <div class="col-lg-4">
+                <div class="card" style="width: 100%;">
+                    <img src="images/card-1.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <a href="#" class="text-white text-decoration-none">
+                            <h5 class="card-title text-success">Copa América Feminina 2022: veja como ficaram os
+                                grupos após sorteio da Conmebol</h5>
+                        </a>
+                        <p class="card-text">Brasil é cabeça de chave do grupo B, que tem Peru, Venezuela, Argentina
+                            e
+                            Uruguai<br><br><br></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card" style="width: 100%;">
+                    <img src="images/card-2.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <a href="#" class="text-white text-decoration-none">
+                            <h5 class="card-title text-success">Seleção brasileira: lateral Danilo tem lesão no pé e
+                                faz
+                                tratamento para evitar corte</h5>
+                        </a>
+                        <p class="card-text">Médicos da CBF monitoram situação do jogador da Juventus. Seleção
+                            brasileira enfrenta em jogos amistosos seleções da Coreia do Sul e do Japão no início de
+                            junho</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card" style="width: 100%;">
+                    <img src="images/4.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <a href="#" class="text-white text-decoration-none">
+                            <h5 class="card-title text-success">Tite revela que pegou Covid-19 no retorno do sorteio
+                                da
+                                Copa do Catar e de jogos na Europa</h5>
+                        </a>
+                        <p class="card-text">Em entrevista ao canal "Desimpedidos", técnico da seleção brasileira
+                            conta
+                            que contraiu coronavírus e acabou passando para esposa e filha no mês de abril</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-2 mb-4">
+            <div class="col-lg-4 mt-4">
+                <div class="card" style="width: 100%;">
+                    <img src="images/5.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <a href="#" class="text-white text-decoration-none">
+                            <h5 class="card-title text-success">CBF é multada por conta de invasão de campo em duelo
+                                entre Brasil e Paraguai, nas eliminatórias</h5>
+                        </a>
+                        <p class="card-text">Federação terá que pagar R$ 103 mil por problemas de "ordem e
+                            segurança" em
+                            confronto no Mineirão<br><br><br></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mt-4">
+                <div class="card" style="width: 100%;">
+                    <img src="images/6.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <a href="#" class="text-white text-decoration-none">
+                            <h5 class="card-title text-success">Fifa remarca Brasil x Argentina interrompido para o
+                                dia 22 de setembro</h5>
+                        </a>
+                        <p class="card-text">CBF terá até 22 de junho para informar em que estádio a partida será
+                            disputada<br><br><br><br></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mt-4">
+                <div class="card" style="width: 100%;">
+                    <img src="images/8.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <a href="#" class="text-white text-decoration-none">
+                            <h5 class="card-title text-success">Guardiola diz que ficaria no City para sempre e nega
+                                chance de treinar o Brasil: "Hoje não"</h5>
+                        </a>
+                        <p class="card-text">Treinador é perguntado sobre possível interesse da CBF em sua contratação, trazido à tona pelo "Marca", e diz não saber "de onde veio". Pep nega rótulo de "melhor do mundo" dado por Klopp</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!------ Modal ------->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">A Seleção</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>A Seleção Brasileira de Futebol representa o Brasil nas competições de futebol da CONMEBOL e
+                            FIFA.<br><br>
+
+                            Formada em 1914 e considerada um dos maiores símbolos do país, é chamada de "Seleção",
+                            "Seleção
+                            Canarinho" ou "Verde-Amarela". É a seleção mais bem-sucedida da história do futebol mundial,
+                            sendo a
+                            recordista em conquistas em Copas do Mundo, com cinco títulos invictos (1958, 1962, 1970,
+                            1994 e
+                            2002) e quatro títulos da Copa das Confederações FIFA (1997, 2005, 2009 e 2013).<br><br>
+
+                            Dentre outras conquistas importantes, a seleção detém nove títulos da Copa América (1919,
+                            1922,
+                            1949, 1989, 1997, 1999, 2004, 2007 e 2019). Conquistou ainda quatro Copa das Confederações
+                            FIFA
+                            (1997, 2005, 2009 e 2013), competição na qual também é a maior vencedora da história. Nos
+                            Jogos
+                            Olímpicos de 2016, sediados no Rio de Janeiro, conquistou pela primeira vez a medalha de
+                            ouro,
+                            vencendo a seleção alemã nos pênaltis. Tem como maior rival no esporte a Argentina.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <a class="page-link">Anterior</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#">Próximo</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!------ Accordion ------>
+        <div class="col-lg-4 mt-4 mb-4 w-100 text-center">
+            <h4 class="text-center mb-4">Lista de Convodados 2022</h4>
+
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Goleiros
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>Alisson (Liverpool)<br>
+                                Ederson (Manchester City)<br>
+                                Weverton (Palmeiras)</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Zagueiros
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>Eder Militão (Real Madrid)<br>
+                                Gabriel Magalhães (Arsenal)<br>
+                                Marquinhos (PSG)<br>
+                                Thiago Silva (Chelsea)</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Laterais
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>Daniel Alves (Barcelona)<br>
+                                Danilo (Juventus)<br>
+                                Alex Sandro (Juventus)<br>
+                                Alex Telles (Manchester United)<br>
+                                Guilherme Arana (Atlético-MG)</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Meio-Campistas
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>Bruno Guimarães (Newcastle)<br>
+                                Casemiro (Real Madrid), Danilo (Palmeiras)<br>
+                                Fabinho (Liverpool)<br>
+                                Fred (Manchester United)<br>
+                                Lucas Paquetá (Lyon)<br>
+                                Philippe Coutinho (Aston Villa);</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Atacantes
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>Gabriel Jesus (Manchester City)<br>
+                                Gabriel Martinelli (Arsenal)<br>
+                                Matheus Cunha (Atlético de Madrid)<br>
+                                Neymar (Paris Saint-Germain)<br>
+                                Raphinha (Leeds United)<br>
+                                Richarlison (Everton)<br>
+                                Rodrygo</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="text-center text-white" style="background-color: #393939;">
+        <!-- Grid container -->
+        <div class="container pt-2">
+            <!-- Section: Social media -->
+            <section class="mb-2">
+
+                <!-- Twitter -->
+                <a class="btn btn-link btn-floating btn-lg text-white m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-link btn-floating btn-lg text-white m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-youtube"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-link btn-floating btn-lg text-white m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            Brasil na Copa - 2022
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
