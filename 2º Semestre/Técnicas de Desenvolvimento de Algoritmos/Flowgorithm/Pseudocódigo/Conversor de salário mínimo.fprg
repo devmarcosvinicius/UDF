@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mrcsv"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-04 01:27:32 PM"/>
+        <attribute name="created" value="bXJjc3Y7R1JYOzIwMjItMDktMDQ7MDE6MTc6MDIgUE07MjA3MA=="/>
+        <attribute name="edited" value="bXJjc3Y7R1JYOzIwMjItMDktMDQ7MDE6Mjc6MzIgUE07MTsyMTgy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="salarioMinimo, salario, quantidade" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o valor do salario minimo: &quot;" newline="True"/>
+            <input variable="salarioMinimo"/>
+            <output expression="&quot;Digite o valor do salario: &quot;" newline="True"/>
+            <input variable="salario"/>
+            <assign variable="quantidade" expression="salario/salarioMinimo"/>
+            <output expression="&quot;Voc&#234; ganha &quot; &amp; ToFixed(quantidade, 2) &amp; &quot; salario(s) minimo.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

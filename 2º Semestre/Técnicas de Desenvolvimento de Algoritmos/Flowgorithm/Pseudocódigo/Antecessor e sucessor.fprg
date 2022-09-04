@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mrcsv"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-04 01:07:00 PM"/>
+        <attribute name="created" value="bXJjc3Y7R1JYOzIwMjItMDktMDQ7MTI6MzY6NDIgUE07MjA3Nw=="/>
+        <attribute name="edited" value="bXJjc3Y7R1JYOzIwMjItMDktMDQ7MDE6MDc6MDAgUE07MTsyMTc1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero, antes, depois" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite um numero inteiro: &quot;" newline="True"/>
+            <input variable="numero"/>
+            <assign variable="antes" expression="numero - 1"/>
+            <assign variable="depois" expression="numero + 1"/>
+            <output expression="&quot;O antecessor do numero digitado &#233; &quot; &amp; antes &amp; &quot;.&quot; &amp; ToChar(13) &amp;&#13;&#10;&quot;O numero que foi digitado &#233; &quot; &amp; numero &amp; &quot;.&quot; &amp; ToChar(13) &amp;&#13;&#10;&quot;O sucessor do numero digitado &#233; &quot; &amp; depois &amp; &quot;.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mrcsv"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-04 01:15:40 PM"/>
+        <attribute name="created" value="bXJjc3Y7R1JYOzIwMjItMDktMDQ7MDE6MDc6MDggUE07MjA3NQ=="/>
+        <attribute name="edited" value="bXJjc3Y7R1JYOzIwMjItMDktMDQ7MDE6MTU6NDAgUE07MTsyMTc4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="kilometers" type="Integer" array="False" size=""/>
+            <declare name="miles" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite a velocidade em km/h para ser convertida em mph: &quot;" newline="True"/>
+            <input variable="kilometers"/>
+            <assign variable="miles" expression="kilometers * 0.62"/>
+            <output expression="kilometers &amp; &quot; km/h &#233; igual a &quot; &amp; miles &amp; &quot; mph.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
