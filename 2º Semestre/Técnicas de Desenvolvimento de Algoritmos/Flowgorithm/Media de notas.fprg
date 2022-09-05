@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mrcsv"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-04 09:44:50 PM"/>
+        <attribute name="created" value="bXJjc3Y7R1JYOzIwMjItMDktMDQ7MDk6Mzc6NTAgUE07MjA4Mw=="/>
+        <attribute name="edited" value="bXJjc3Y7R1JYOzIwMjItMDktMDQ7MDk6NDQ6NTAgUE07MTsyMTg5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nota1, nota2, media" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite a nota da primeira prova: &quot;" newline="True"/>
+            <input variable="nota1"/>
+            <output expression="&quot;Digite a nota da segunda prova: &quot;" newline="True"/>
+            <input variable="nota2"/>
+            <assign variable="media" expression="(nota1 + nota2) / 2"/>
+            <if expression="media &gt;= 6">
+                <then>
+                    <output expression="&quot;Aprovado&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Reprovado&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
