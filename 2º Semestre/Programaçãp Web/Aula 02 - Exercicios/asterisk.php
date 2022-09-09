@@ -8,12 +8,13 @@
 </head>
 <body>
     <?php
-        $palavra1 = "primeira";
-        $palavra2 = "segunda";
-        $palavra3 = "terceira";
-        $palavra4 = "quarta";
-        str_replace(" ", "*", $palavras);
+        $palavra1 = "primeiro";
+        $palavra2 = "segundo";
+        $palavra3 = "terceiro";
+        $palavra4 = "quarto";
 
+        $palavras = $palavra1 . $palavra2 . $palavra3 . $palavra4;
+        $palavras = str_repeat("*", strlen($palavras));
         echo $palavras;
     ?>
 </body>
