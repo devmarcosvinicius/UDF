@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mrcsv"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-19 05:22:39 PM"/>
+        <attribute name="created" value="bXJjc3Y7R1JYOzIwMjItMDktMTk7MDU6MTc6MjAgUE07MjA4MA=="/>
+        <attribute name="edited" value="bXJjc3Y7R1JYOzIwMjItMDktMTk7MDU6MjI6MzkgUE07MjsyMTk1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero, centena, dezena, unidade" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite um numero de tr&#234;s digitos: &quot;" newline="True"/>
+            <input variable="numero"/>
+            <assign variable="centena" expression="numero / 100"/>
+            <assign variable="dezena" expression="(numero % 100) / 10"/>
+            <assign variable="unidade" expression="numero % 10"/>
+            <output expression="&quot;O seu numero &#233; &quot; &amp; numero &amp; ToChar(13) &amp; &quot;O numero invertido &#233; &quot; &amp; unidade &amp; dezena &amp; centena" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

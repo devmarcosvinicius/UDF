@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mrcsv"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-19 05:06:49 PM"/>
+        <attribute name="created" value="bXJjc3Y7R1JYOzIwMjItMDktMTk7MDQ6MjY6MDggUE07MjA4NQ=="/>
+        <attribute name="edited" value="bXJjc3Y7R1JYOzIwMjItMDktMTk7MDU6MDY6NDkgUE07MTsyMTk3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="saque, total, resto" type="Real" array="False" size=""/>
+            <declare name="n100, n50, n20, n10, n5, n2, n1" type="Real" array="False" size=""/>
+            <assign variable="n100" expression="0"/>
+            <assign variable="n50" expression="0"/>
+            <assign variable="n20" expression="0"/>
+            <assign variable="n10" expression="0"/>
+            <assign variable="n5" expression="0"/>
+            <assign variable="n2" expression="0"/>
+            <assign variable="n1" expression="0"/>
+            <output expression="&quot;Digite o valor a ser sacado: &quot;" newline="True"/>
+            <input variable="saque"/>
+            <if expression="saque != 0">
+                <then>
+                    <while expression="saque &gt;= 100">
+                        <assign variable="n100" expression="n100 + 1"/>
+                        <assign variable="saque" expression="saque - 100"/>
+                    </while>
+                    <while expression="saque &gt;= 50">
+                        <assign variable="n50" expression="n50 + 1"/>
+                        <assign variable="saque" expression="saque - 50"/>
+                    </while>
+                    <while expression="saque &gt;= 20">
+                        <assign variable="n20" expression="n20 + 1"/>
+                        <assign variable="saque" expression="saque - 20"/>
+                    </while>
+                    <while expression="saque &gt;= 10">
+                        <assign variable="n10" expression="n10 + 1"/>
+                        <assign variable="saque" expression="saque - 10"/>
+                    </while>
+                    <while expression="saque &gt;= 5">
+                        <assign variable="n5" expression="n5 + 1"/>
+                        <assign variable="saque" expression="saque - 5"/>
+                    </while>
+                    <while expression="saque &gt;= 2">
+                        <assign variable="n2" expression="n2 + 1"/>
+                        <assign variable="saque" expression="saque - 2"/>
+                    </while>
+                    <while expression="saque &gt;= 1">
+                        <assign variable="n1" expression="n1 + 1"/>
+                        <assign variable="saque" expression="saque - 1"/>
+                    </while>
+                </then>
+                <else/>
+            </if>
+            <assign variable="total" expression="n100*100+n50*50+n20*20+n10*10+n5*5+n2*2"/>
+            <assign variable="resto" expression="saque - total"/>
+            <output expression="&quot;A quantidade de notas 100 &#233;: &quot; &amp; n100 &amp; ToChar(13) &amp; &#13;&#10;&quot;A quantidade de notas 50 &#233;: &quot; &amp; n50 &amp; ToChar(13) &amp; &#13;&#10;&quot;A quantidade de notas 20 &#233;: &quot; &amp; n20 &amp; ToChar(13) &amp; &#13;&#10;&quot;A quantidade de notas 10 &#233;: &quot; &amp; n10 &amp; ToChar(13) &amp; &#13;&#10;&quot;A quantidade de notas 5 &#233;: &quot; &amp; n5 &amp; ToChar(13) &amp; &#13;&#10;&quot;A quantidade de notas 2 &#233;: &quot; &amp; n2 &amp; ToChar(13) &amp; &#13;&#10;&quot;A quantidade de notas 1 &#233;: &quot; &amp; n1" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
