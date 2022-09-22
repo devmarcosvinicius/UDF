@@ -23,11 +23,12 @@
     mais 8; caso o valor somado seja menor ou igual a 20, este deverá ser
     apresentado subtraindo-se 5 */
 
-
-    if (@$_REQUEST["primeiro"] + @$_REQUEST["segundo"] > 20 && !empty($_REQUEST)) {
-        echo @$_REQUEST["primeiro"] + @$_REQUEST["segundo"] + 8;
-    } elseif (@$_REQUEST["primeiro"] + @$_REQUEST["segundo"] < 20) {
-        echo @$_REQUEST["primeiro"] + @$_REQUEST["segundo"] - 5;
+    if (!empty($_REQUEST)) {
+        if (@$_REQUEST["primeiro"] + @$_REQUEST["segundo"] > 20 && !empty($_REQUEST)) {
+            echo @$_REQUEST["primeiro"] + @$_REQUEST["segundo"] + 8;
+        } elseif (@$_REQUEST["primeiro"] + @$_REQUEST["segundo"] < 20) {
+            echo @$_REQUEST["primeiro"] + @$_REQUEST["segundo"] - 5;
+        }
     }
     ?>
 </body>
