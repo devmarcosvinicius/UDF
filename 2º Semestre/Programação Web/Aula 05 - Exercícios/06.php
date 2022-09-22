@@ -18,6 +18,9 @@
     </form>
 
     <?php
+    /* 06. Calcular a quantidade de dinheiro gasta por um fumante. Dados: o número de anos
+    que ele fuma, o nº de cigarros fumados por dia e o preço de uma carteira. */
+    
         if(!empty($_REQUEST)){
             $tempo = @$_REQUEST["tempo"];
             $quantidade = @$_REQUEST["quantidade"];

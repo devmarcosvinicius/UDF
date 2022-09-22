@@ -15,6 +15,9 @@
     </form>
 
     <?php
+    /* 03. Crie um script php que receba um número, a partir de um formulário e gere a tabuada
+    completa de multiplicação deste número. */
+
     if (!empty($_REQUEST)) {
         $numero = @$_REQUEST["numero"];
 

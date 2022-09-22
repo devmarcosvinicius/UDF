@@ -15,7 +15,11 @@
         <label>3º</label><input type="number" name="terceiro">
         <button type="submit">Enviar</button>
     </form>
+
     <?php
+    /* 02. Ler três números inteiros, a partir de um formulário, e imprimir na tela qual o maior e
+    menor valor fornecido. */
+
     $primeiro = @$_REQUEST['primeiro'];
     $segundo = @$_REQUEST['segundo'];
     $terceiro = @$_REQUEST['terceiro'];

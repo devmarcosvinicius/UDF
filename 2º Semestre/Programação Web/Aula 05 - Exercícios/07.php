@@ -18,8 +18,11 @@
     </form>
 
     <?php
-    function criarTabela(int $linhas, int $colunas, string $texto)
-    {
+    /* 07. Escreva uma função que recebe, por parâmetro, o número de linhas, colunas e um
+        conteúdo (texto) qualquer. Que serão utilizados para criar uma tabela HTML com essas
+        características. */
+
+    function criarTabela(int $linhas, int $colunas, string $texto){
         echo "<table>";
         for ($i = 1; $i <= $linhas; $i++) {
             echo "<tr>";

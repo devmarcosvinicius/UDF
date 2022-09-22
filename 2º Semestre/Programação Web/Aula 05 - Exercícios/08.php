@@ -18,6 +18,18 @@
     </form>
 
     <?php
+    /* 08. Criar uma função para calcular o imposto de renda dos contribuintes, considerando
+        que os dados de cada contribuinte, número de CPF, número de dependentes e renda
+        mensal são valores fornecidos pelo usuário. Para cada contribuinte será feito um
+        desconto de 5% do salário mínimo por dependente.
+        Os valores para cálculo do imposto são:
+        Renda Líquida Alíquota
+        Até 3 salários mínimos Isento
+        3 salários mínimos 7%
+        4 salários mínimos 15%
+        5 salários mínimos 22%
+        Acima de 6 salários mínimos 27% */
+
         function calcular(float $cpf, int $dependentes, float $renda){
             $salarioMinimo = 1212.00;
             $desconto = $dependentes;
