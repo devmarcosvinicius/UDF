@@ -10,9 +10,9 @@
 
 <body>
     <form action="01.php" method="POST">
-        <input type="number" name="primeiro">
+        <input type="number" name="primeiro" placeholder="Digite um numero" required>
         <label>+</label>
-        <input type="number" name="segundo">
+        <input type="number" name="segundo" placeholder="Digite um numero" required>
         <button type="submit">=</button>
     </form>
 

@@ -8,9 +8,9 @@
 </head>
 <body>
     <form action="04.php" method="GET">
-        <input type="number" name="a" placeholder="Digite o primeiro numero"><br>
-        <input type="number" name="b" placeholder="Digite o segundo numero"><br>
-        <input type="number" name="c" placeholder="Digite o terceiro numero"><br>
+        <input type="number" name="a" placeholder="Digite o primeiro numero" style="width: 165px;" required><br>
+        <input type="number" name="b" placeholder="Digite o segundo numero" style="width: 165px;" required><br>
+        <input type="number" name="c" placeholder="Digite o terceiro numero" style="width: 165px;" required><br>
         <button type="submit">Enviar</button><br>
     </form>
 

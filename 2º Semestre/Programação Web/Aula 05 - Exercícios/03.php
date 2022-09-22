@@ -10,8 +10,8 @@
 
 <body>
     <form action="03.php" method="POST">
-        <input type="number" name="numero" placeholder="Digite um numero">
-        <button type="submit">Enviar</button>
+        <input type="number" name="numero"  placeholder="Digite um numero" required>
+        <button type="submit">Tabuada</button>
     </form>
 
     <?php
