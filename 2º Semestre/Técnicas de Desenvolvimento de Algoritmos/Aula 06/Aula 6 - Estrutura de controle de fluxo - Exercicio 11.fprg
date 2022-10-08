@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mrcsv"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-06 11:28:20 PM"/>
+        <attribute name="created" value="bXJjc3Y7R1JYOzIwMjItMTAtMDY7MTA6NTE6NTUgQU07MjA1NQ=="/>
+        <attribute name="edited" value="bXJjc3Y7R1JYOzIwMjItMTAtMDY7MTE6Mjg6MjAgUE07MTY7MjIyOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nome" type="String" array="False" size=""/>
+            <declare name="faltas, n1, n2, n3, media" type="Real" array="False" size=""/>
+            <assign variable="media" expression="0"/>
+            <output expression="&quot;Digite o nome do(a) aluno(a): &quot;" newline="True"/>
+            <input variable="nome"/>
+            <output expression="&quot;Digite a primeira nota: &quot;" newline="True"/>
+            <input variable="n1"/>
+            <while expression="n1 &lt; 0 || n1 &gt; 10">
+                <output expression="&quot;O valor da primeira nota deve ser de 0 a 10.&quot; &amp; ToChar(13) &amp;&#13;&#10;&quot;Digite a primeira nota: &quot;" newline="True"/>
+                <input variable="n1"/>
+            </while>
+            <output expression="&quot;Digite a segunda nota: &quot;" newline="True"/>
+            <input variable="n2"/>
+            <while expression="n2 &lt; 0 || n2 &gt; 10">
+                <output expression="&quot;O valor da segunda nota deve ser de 0 a 10.&quot; &amp; ToChar(13) &amp;&#13;&#10;&quot;Digite a primeira nota: &quot;" newline="True"/>
+                <input variable="n2"/>
+            </while>
+            <output expression="&quot;Digite a terceira nota: &quot;" newline="True"/>
+            <input variable="n3"/>
+            <while expression="n3 &lt; 0 || n3 &gt; 10">
+                <output expression="&quot;O valor da terceira nota deve ser de 0 a 10.&quot; &amp; ToChar(13) &amp;&#13;&#10;&quot;Digite a primeira nota: &quot;" newline="True"/>
+                <input variable="n3"/>
+            </while>
+            <assign variable="media" expression="((n1 + n2 + n3) / 3)"/>
+            <output expression="&quot;Digite o numero de faltas: &quot;" newline="True"/>
+            <input variable="faltas"/>
+            <if expression="media &gt;= 7">
+                <then>
+                    <if expression="faltas &gt; 15">
+                        <then>
+                            <output expression="nome &amp; &quot;, voc&#234; foi reprovador por n&#227;o atingir a media. Voc&#234; ficou com media de &quot; &amp; ToFixed(media, 2) &amp; &quot; pontos e com &quot; &amp; faltas &amp; &quot; faltas.&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Parabens &quot; &amp; nome &amp; &quot;! Voc&#234; foi aprovado com media de &quot; &amp; ToFixed(media, 2) &amp; &quot; pontos e com &quot; &amp; faltas &amp; &quot; faltas&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="faltas &gt; 15">
+                        <then>
+                            <output expression="nome &amp; &quot;, voc&#234; foi reprovado com media de &quot; &amp; ToFixed(media, 2) &amp; &quot; pontos e tambem foi reprovador por exceder o numero maximo de faltas. Voc&#234; ficou com &quot; &amp; faltas &amp; &quot; faltas.&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="nome &amp; &quot;, voc&#234; foi reprovador por n&#227;o atingir a media. Voc&#234; ficou com media de &quot; &amp; ToFixed(media, 2) &amp; &quot; pontos e com &quot; &amp; faltas &amp; &quot; faltas.&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
