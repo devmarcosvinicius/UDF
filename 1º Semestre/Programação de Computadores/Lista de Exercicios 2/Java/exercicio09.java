@@ -2,6 +2,11 @@ package me.marcosderek.lista2;
 
 import java.util.Scanner;
 
+/*
+ * 9. Elabore um algoritmo que leia dois números inteiros e realize a adição; caso o resultado seja maior que 10, 
+ * imprima o quadrado do resultado, caso contrário, imprima a metade dele
+ */
+
 public class exercicio09 {
 	private static Scanner input = new Scanner(System.in);
 	

@@ -2,6 +2,10 @@ package me.marcosderek.lista2;
 
 import java.util.Scanner;
 
+/*
+ * 8. Elabore um algoritmo que leia um número, e se ele for maior do que 20, imprimir a metade desse número, caso contrário, imprimir o dobro do número
+ */
+
 public class exercicio08 {
 	private static Scanner input = new Scanner(System.in);
 	

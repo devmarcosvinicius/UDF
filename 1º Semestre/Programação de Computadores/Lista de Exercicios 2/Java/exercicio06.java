@@ -2,6 +2,10 @@ package me.marcosderek.lista2;
 
 import java.util.Scanner;
 
+/*
+ * 6. Refazer o exercício anterior, solicitando antes o múltiplo a ser testado
+ */
+
 public class exercicio06 {
 	private static Scanner input = new Scanner(System.in);
 	

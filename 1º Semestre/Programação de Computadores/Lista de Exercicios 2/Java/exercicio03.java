@@ -2,6 +2,10 @@ package me.marcosderek.lista2;
 
 import java.util.Scanner;
 
+/*
+ * 3. Elabore um algoritmo que solicite ao usuário um número real e ao final imprima na tela se o número informado é maior que dez, se é menor que dez, ou se é igual a dez
+ */
+
 public class exercicio03 {
 	private static Scanner input = new Scanner(System.in);
 	

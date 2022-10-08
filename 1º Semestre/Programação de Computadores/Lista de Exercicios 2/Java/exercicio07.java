@@ -2,6 +2,10 @@ package me.marcosderek.lista2;
 
 import java.util.Scanner;
 
+/*
+ * 7. Desenvolva um algoritmo que classifique um número inteiro fornecido pelo usuário como par ou ímpar
+ */
+
 public class exercicio07 {
 	private static Scanner input = new Scanner(System.in);
 	
